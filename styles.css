@@ -151,10 +151,30 @@ body {
   letter-spacing: .3px;
 }
 
+.hero-tagline {
+  color: var(--primary);
+  font-size: 15px;
+  font-weight: 600;
+  margin: 8px 0 4px;
+}
+
 .hero .sub {
   color: var(--muted);
   font-size: 16px;
   margin: 10px 0 22px;
+}
+
+.hero-badges-secondary {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.hero-badges-secondary img {
+  height: 40px;
+  width: auto;
 }
 
 .cta {
@@ -193,6 +213,12 @@ body {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+
+.showcase .media figcaption {
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--muted);
 }
 
 /* Store badges */
@@ -259,6 +285,13 @@ section {
 section h2 {
   font-size: 26px;
   margin: 0 0 18px;
+}
+
+.section-lead {
+  color: var(--muted);
+  font-size: 16px;
+  margin: 0 0 24px;
+  max-width: 640px;
 }
 
 /* Features grid */
@@ -395,6 +428,51 @@ section h2 {
   letter-spacing: .2px;
 }
 
+/* Different / Use cases */
+.different-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: var(--muted);
+}
+
+.different-list li {
+  position: relative;
+  padding-left: 20px;
+  margin-top: 12px;
+}
+
+.different-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+}
+
+.plan-comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.premium .plan-free .plan-title {
+  margin-top: 0;
+}
+
+.download .download-cta {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.download .download-cta .btn {
+  padding: 0 24px;
+  height: 48px;
+  font-size: 16px;
+}
+
 /* Official */
 .social {
   display: grid;
@@ -524,6 +602,10 @@ section h2 {
   }
 
   .social-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .plan-comparison {
     grid-template-columns: 1fr;
   }
 }
