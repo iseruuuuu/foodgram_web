@@ -7,9 +7,15 @@
     <title>FoodGram – Food Map App to Discover Real Meals Through Photos</title>
     <meta name="description"
         content="Explore restaurants and food spots through real photos. FoodGram is a food map app where you can discover meals, save food memories, and share what you eat on iPhone and Android.">
+    <meta name="keywords"
+        content="FoodGram, food map app, discover restaurants, real food photos, food diary, travel food, iPhone, Android">
     <meta name="robots" content="index, follow">
+    <!-- デプロイ先に合わせてベースURLを変更してください -->
+    <link rel="canonical" href="https://iseruuuuu.github.io/foodgram-web/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        as="style">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
     <link rel="icon" href="./docs/icon.png" type="image/png" sizes="any">
@@ -17,19 +23,22 @@
     <meta name="theme-color" content="#0b0f1a">
     <meta name="apple-itunes-app" content="app-id=6474065183">
     <meta property="og:site_name" content="FoodGram">
+    <meta property="og:url" content="https://iseruuuuu.github.io/foodgram-web/">
     <meta property="og:title" content="FoodGram – Discover real meals through photos">
     <meta property="og:description"
         content="A global food map app for exploring restaurants, travel meals, and your own food memories. Free on iPhone & Android.">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_US">
-    <meta property="og:image" content="./docs/icon.png">
+    <meta property="og:image" content="https://iseruuuuu.github.io/foodgram-web/docs/icon.png">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
     <meta property="og:image:alt" content="FoodGram – Global food map app to discover real meals through photos">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@FoodGram_dev">
     <meta name="twitter:title" content="FoodGram – Discover real meals through photos">
     <meta name="twitter:description"
         content="A global food map app for exploring restaurants, travel meals, and your own food memories. Free on iPhone & Android.">
-    <meta name="twitter:image" content="./docs/icon.png">
+    <meta name="twitter:image" content="https://iseruuuuu.github.io/foodgram-web/docs/icon.png">
     <meta name="twitter:image:alt" content="FoodGram – Global food map app to discover real meals through photos">
     <script type="application/ld+json">
         {
@@ -41,11 +50,13 @@
             "applicationCategory": "SocialNetworkingApplication",
             "isAccessibleForFree": true,
             "description": "A food map app to discover real meals through photos. Explore restaurants and food spots, save food memories, and share what you eat on iPhone and Android.",
-            "image": "./docs/icon.png",
+            "url": "https://iseruuuuu.github.io/foodgram-web/",
+            "image": "https://iseruuuuu.github.io/foodgram-web/docs/icon.png",
             "publisher": {
                 "@type": "Organization",
                 "name": "FoodGram",
-                "logo": "./docs/icon.png",
+                "url": "https://iseruuuuu.github.io/foodgram-web/",
+                "logo": "https://iseruuuuu.github.io/foodgram-web/docs/icon.png",
                 "sameAs": [
                     "https://twitter.com/FoodGram_dev",
                     "https://www.instagram.com/foodgram.app2025/",
@@ -65,16 +76,19 @@
                 {"@type": "Question", "name": "What is FoodGram?", "acceptedAnswer": {"@type": "Answer", "text": "FoodGram is a food map app and food photo app where you discover real meals through real photos. You can explore restaurants and food spots on a map, save your food memories in a personal album, and share what you eat — including anonymously. It's available free on iPhone and Android."}},
                 {"@type": "Question", "name": "Is FoodGram free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. FoodGram is free to use. Optional Premium (US$3/month) unlocks extra features like custom profile icons, favorite categories, ad-free experience, and a hygiene map."}},
                 {"@type": "Question", "name": "Can I discover restaurants by photos?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. FoodGram is built for discovering restaurants and food spots through real food photos from real people, not only ratings. Browse by photo to find meals that look delicious to you."}},
-                {"@type": "Question", "name": "Does FoodGram work for travel planning?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Use the food map to find memorable meals around the world. Discover restaurants by photos when you're planning a trip or exploring a new city."}}
+                {"@type": "Question", "name": "Does FoodGram work for travel planning?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Use the food map to find memorable meals around the world. Discover restaurants by photos when you're planning a trip or exploring a new city."}},
+                {"@type": "Question", "name": "Which languages are supported?", "acceptedAnswer": {"@type": "Answer", "text": "English, Japanese, Korean, Chinese, Spanish, French, German, Portuguese, Thai, Vietnamese, and more."}},
+                {"@type": "Question", "name": "How do I cancel Premium?", "acceptedAnswer": {"@type": "Answer", "text": "Manage your subscription in the App Store or Google Play subscription settings for your account."}}
             ]
         }
     </script>
 </head>
 
 <body>
+    <a class="skip-link" href="#get-started">Skip to main content</a>
     <header class="site-header">
         <div class="container header-inner">
-            <a class="logo" href="#">FoodGram</a>
+            <a class="logo" href="#get-started" aria-current="page">FoodGram</a>
             <nav class="nav" aria-label="Main">
                 <a href="#preview">See the app</a>
                 <a href="#features">Features</a>
@@ -94,24 +108,35 @@
         <!-- Hero: what it is, why different, what to do -->
         <section class="hero" id="get-started">
             <div class="container hero-inner">
-                <h1 class="hero-title">A global food map built from real meals</h1>
-                <p class="hero-tagline">Not ratings. Real meals.</p>
-                <p class="hero-sub">Discover restaurants through real food photos around the world. Every meal becomes a pin on the map.</p>
+                <p class="hero-pill">New: Bringing the community closer</p>
+                <h1 class="hero-title">FoodGram – Food Map App to Discover Real Meals Through Photos</h1>
+                <p class="hero-tagline">A global food map built from real meals</p>
+                <p class="hero-sub">Explore restaurants, food spots, and travel meals through real photos from real people. Save your own food memories, find nearby dishes, and share what you eat.</p>
                 <div class="hero-cta">
                     <div class="store-badges hero-badges" role="group" aria-label="Download the app">
-                        <a href="https://apps.apple.com/gb/app/foodgram-food-photo-sharing/id6474065183" target="_blank" rel="noopener" aria-label="Download on the App Store">
-                            <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store">
+                        <a href="https://apps.apple.com/gb/app/foodgram-food-photo-sharing/id6474065183" target="_blank"
+                            rel="noopener" aria-label="Download on the App Store">
+                            <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83"
+                                alt="Download on the App Store" fetchpriority="high" width="250" height="83">
                         </a>
-                        <a href="https://play.google.com/store/apps/details?id=com.food_gram_app.com.com.com" target="_blank" rel="noopener" aria-label="Get it on Google Play">
-                            <img src="https://play.google.com/intl/en/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
+                        <a href="https://play.google.com/store/apps/details?id=com.food_gram_app.com.com.com"
+                            target="_blank" rel="noopener" aria-label="Get it on Google Play">
+                            <img src="https://play.google.com/intl/en/badges/static/images/badges/en_badge_web_generic.png"
+                                alt="Get it on Google Play">
                         </a>
                     </div>
                     <a class="btn btn-outline btn-secondary-cta" href="#preview">See how it works</a>
                 </div>
-                <p class="hero-trust">Free to download · iOS & Android</p>
+                <p class="hero-trust">Free to use · iOS &amp; Android · Premium available</p>
                 <div class="hero-badges-secondary" aria-hidden="true">
-                    <a href="https://orynth.dev/projects/foodgram" target="_blank" rel="noopener" aria-label="Featured on Orynth"><img src="https://orynth.dev/api/badge/foodgram?theme=light&style=default" alt="" width="180" height="56"></a>
-                    <a href="https://www.producthunt.com/products/foodgram-eat-x-snap-x-share-2/launches/foodgram-android" target="_blank" rel="noopener noreferrer" aria-label="FoodGram on Product Hunt"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1044617&amp;theme=light&amp;t=1767492188043" alt="" width="180" height="40"></a>
+                    <a href="https://orynth.dev/projects/foodgram" target="_blank" rel="noopener"
+                        aria-label="Featured on Orynth"><img
+                            src="https://orynth.dev/api/badge/foodgram?theme=light&style=default" alt="" width="180"
+                            height="56"></a>
+                    <a href="https://www.producthunt.com/products/foodgram-eat-x-snap-x-share-2/launches/foodgram-android"
+                        target="_blank" rel="noopener noreferrer" aria-label="FoodGram on Product Hunt"><img
+                            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1044617&amp;theme=light&amp;t=1767492188043"
+                            alt="" width="180" height="40"></a>
                 </div>
             </div>
         </section>
@@ -124,7 +149,8 @@
                 <div class="preview-grid">
                     <figure class="preview-card">
                         <div class="preview-card-inner">
-                            <img src="./docs/introduce.png" alt="FoodGram timeline with real meal photos" loading="lazy">
+                            <img src="./docs/introduce.png" alt="FoodGram timeline with real meal photos"
+                                loading="lazy">
                         </div>
                         <figcaption class="preview-caption">Share the meals you actually ate</figcaption>
                     </figure>
@@ -160,37 +186,47 @@
         <section class="section section-features" id="features">
             <div class="container">
                 <h2 class="section-title">What you can do</h2>
-                <p class="section-lead">Discover restaurants through real food photos. Each meal becomes part of a global map.</p>
+                <p class="section-lead">Discover restaurants through real food photos. Each meal becomes part of a
+                    global map.</p>
                 <div class="value-grid">
                     <article class="value-card">
                         <h3 class="value-card-title">Find food by photos</h3>
-                        <p class="value-card-text">Real photos from people who ate there. Choose by what looks good, not just ratings.</p>
+                        <p class="value-card-text">Real photos from people who ate there. Choose by what looks good, not
+                            just ratings.</p>
                     </article>
                     <article class="value-card">
                         <h3 class="value-card-title">Explore a crowd-sourced food map</h3>
-                        <p class="value-card-text">Every meal becomes a map pin. Everyday lunches and travel finds in one place.</p>
+                        <p class="value-card-text">Every meal becomes a map pin. Everyday lunches and travel finds in
+                            one place.</p>
                     </article>
                     <article class="value-card">
                         <h3 class="value-card-title">Build a personal food album</h3>
-                        <p class="value-card-text">Turn your meals into a food memory album. Easy to share when you want.</p>
+                        <p class="value-card-text">Turn your meals into a food memory album. Easy to share when you
+                            want.</p>
                     </article>
                     <article class="value-card value-card-secondary">
                         <h3 class="value-card-title">Share casually</h3>
-                        <p class="value-card-text">Post with or without your name. No pressure — just share what you ate.</p>
+                        <p class="value-card-text">Post with or without your name. No pressure — just share what you
+                            ate.</p>
                     </article>
                     <article class="value-card value-card-secondary">
                         <h3 class="value-card-title">Browse without posting</h3>
-                        <p class="value-card-text">Explore real meals from around the world. No account required to browse.</p>
+                        <p class="value-card-text">Explore real meals from around the world. No account required to
+                            browse.</p>
                     </article>
                 </div>
                 <div class="features-cta-block">
                     <p class="features-cta-label">Start exploring food near you</p>
                     <div class="store-badges store-badges-compact">
-                        <a href="https://apps.apple.com/gb/app/foodgram-food-photo-sharing/id6474065183" target="_blank" rel="noopener" aria-label="Download on the App Store">
-                            <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store">
+                        <a href="https://apps.apple.com/gb/app/foodgram-food-photo-sharing/id6474065183" target="_blank"
+                            rel="noopener" aria-label="Download on the App Store">
+                            <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83"
+                                alt="Download on the App Store">
                         </a>
-                        <a href="https://play.google.com/store/apps/details?id=com.food_gram_app.com.com.com" target="_blank" rel="noopener" aria-label="Get it on Google Play">
-                            <img src="https://play.google.com/intl/en/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
+                        <a href="https://play.google.com/store/apps/details?id=com.food_gram_app.com.com.com"
+                            target="_blank" rel="noopener" aria-label="Get it on Google Play">
+                            <img src="https://play.google.com/intl/en/badges/static/images/badges/en_badge_web_generic.png"
+                                alt="Get it on Google Play">
                         </a>
                     </div>
                 </div>
@@ -202,9 +238,12 @@
             <div class="container">
                 <h2 class="section-title section-title-centered">Why FoodGram is different</h2>
                 <div class="different-block">
-                    <p class="different-line"><span class="different-not">Not ratings.</span> <span class="different-yes">Real meals.</span></p>
-                    <p class="different-line"><span class="different-not">Not restaurant databases.</span> <span class="different-yes">A food map built by people.</span></p>
-                    <p class="different-line"><span class="different-not">Not just posting.</span> <span class="different-yes">A personal food memory album.</span></p>
+                    <p class="different-line"><span class="different-not">Not ratings.</span> <span
+                            class="different-yes">Real meals.</span></p>
+                    <p class="different-line"><span class="different-not">Not restaurant databases.</span> <span
+                            class="different-yes">A food map built by people.</span></p>
+                    <p class="different-line"><span class="different-not">Not just posting.</span> <span
+                            class="different-yes">A personal food memory album.</span></p>
                 </div>
             </div>
         </section>
@@ -217,15 +256,18 @@
                 <div class="audience-grid">
                     <article class="audience-card">
                         <h3 class="audience-card-title">Travelers</h3>
-                        <p class="audience-card-text">Find memorable meals around the world. Discover restaurants by photos when you plan a trip or explore a new city.</p>
+                        <p class="audience-card-text">Find memorable meals around the world. Discover restaurants by
+                            photos when you plan a trip or explore a new city.</p>
                     </article>
                     <article class="audience-card">
                         <h3 class="audience-card-title">Local food lovers</h3>
-                        <p class="audience-card-text">Discover nearby lunch spots and hidden gems. Real photos, not just ratings.</p>
+                        <p class="audience-card-text">Discover nearby lunch spots and hidden gems. Real photos, not just
+                            ratings.</p>
                     </article>
                     <article class="audience-card">
                         <h3 class="audience-card-title">Food memory keepers</h3>
-                        <p class="audience-card-text">Turn your meals into a personal food album and map. Your visual food diary in one place.</p>
+                        <p class="audience-card-text">Turn your meals into a personal food album and map. Your visual
+                            food diary in one place.</p>
                     </article>
                 </div>
             </div>
@@ -235,7 +277,8 @@
         <section class="section section-premium" id="premium">
             <div class="container">
                 <h2 class="section-title">FoodGram Premium</h2>
-                <p class="section-lead">Unlock more ways to explore food. Optional — the app is fully usable for free.</p>
+                <p class="section-lead">Unlock more ways to explore food. Optional — the app is fully usable for free.
+                </p>
                 <div class="premium-comparison">
                     <div class="premium-plan premium-plan-free">
                         <h3 class="premium-plan-name">Free</h3>
@@ -257,7 +300,9 @@
                             <li>Ad-free experience</li>
                             <li>Hygiene map for restaurants</li>
                         </ul>
-                        <a class="btn btn-primary premium-cta" href="https://apps.apple.com/gb/app/foodgram-food-photo-sharing/id6474065183" target="_blank" rel="noopener">Get Premium in the app</a>
+                        <a class="btn btn-primary premium-cta"
+                            href="https://apps.apple.com/gb/app/foodgram-food-photo-sharing/id6474065183"
+                            target="_blank" rel="noopener">Get Premium in the app</a>
                     </div>
                 </div>
             </div>
@@ -270,27 +315,34 @@
                 <div class="faq-list">
                     <details class="faq-item">
                         <summary class="faq-question">What is FoodGram?</summary>
-                        <p class="faq-answer">FoodGram is a food map app where you discover real meals through real photos. Explore restaurants and food spots on a map, save your food memories in a personal album, and share what you eat — including anonymously. Free on iPhone and Android.</p>
+                        <p class="faq-answer">FoodGram is a food map app where you discover real meals through real
+                            photos. Explore restaurants and food spots on a map, save your food memories in a personal
+                            album, and share what you eat — including anonymously. Free on iPhone and Android.</p>
                     </details>
                     <details class="faq-item">
                         <summary class="faq-question">Is FoodGram free?</summary>
-                        <p class="faq-answer">Yes. The app is free to use. Optional Premium (US$3/month) adds custom icons, favorite categories, ad-free experience, and a hygiene map.</p>
+                        <p class="faq-answer">Yes. The app is free to use. Optional Premium (US$3/month) adds custom
+                            icons, favorite categories, ad-free experience, and a hygiene map.</p>
                     </details>
                     <details class="faq-item">
                         <summary class="faq-question">Can I discover restaurants by photos?</summary>
-                        <p class="faq-answer">Yes. FoodGram is built for discovering restaurants through real food photos from real people, not only ratings.</p>
+                        <p class="faq-answer">Yes. FoodGram is built for discovering restaurants through real food
+                            photos from real people, not only ratings.</p>
                     </details>
                     <details class="faq-item">
                         <summary class="faq-question">Does FoodGram work for travel?</summary>
-                        <p class="faq-answer">Yes. Use the food map to find memorable meals around the world and plan trips by real photos.</p>
+                        <p class="faq-answer">Yes. Use the food map to find memorable meals around the world and plan
+                            trips by real photos.</p>
                     </details>
                     <details class="faq-item">
                         <summary class="faq-question">Which languages are supported?</summary>
-                        <p class="faq-answer">English, Japanese, Korean, Chinese, Spanish, French, German, Portuguese, Thai, Vietnamese, and more.</p>
+                        <p class="faq-answer">English, Japanese, Korean, Chinese, Spanish, French, German, Portuguese,
+                            Thai, Vietnamese, and more.</p>
                     </details>
                     <details class="faq-item">
                         <summary class="faq-question">How do I cancel Premium?</summary>
-                        <p class="faq-answer">Manage your subscription in the App Store or Google Play subscription settings for your account.</p>
+                        <p class="faq-answer">Manage your subscription in the App Store or Google Play subscription
+                            settings for your account.</p>
                     </details>
                 </div>
             </div>
@@ -302,8 +354,12 @@
                 <h2 class="section-title section-title-large">Download FoodGram today</h2>
                 <p class="section-lead section-lead-centered">See real meals on the map. Free on iPhone and Android.</p>
                 <div class="download-cta-block">
-                    <a href="https://apps.apple.com/gb/app/foodgram-food-photo-sharing/id6474065183" target="_blank" rel="noopener" class="btn btn-primary btn-download" aria-label="Download on the App Store">Download on the App Store</a>
-                    <a href="https://play.google.com/store/apps/details?id=com.food_gram_app.com.com.com" target="_blank" rel="noopener" class="btn btn-primary btn-download" aria-label="Get it on Google Play">Get it on Google Play</a>
+                    <a href="https://apps.apple.com/gb/app/foodgram-food-photo-sharing/id6474065183" target="_blank"
+                        rel="noopener" class="btn btn-primary btn-download"
+                        aria-label="Download on the App Store">Download on the App Store</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.food_gram_app.com.com.com"
+                        target="_blank" rel="noopener" class="btn btn-primary btn-download"
+                        aria-label="Get it on Google Play">Get it on Google Play</a>
                 </div>
             </div>
         </section>
@@ -313,18 +369,26 @@
             <div class="container">
                 <h2 class="section-title section-title-muted">Community & support</h2>
                 <div class="official-grid">
-                    <a class="official-card" href="https://x.com/FoodGram_dev" target="_blank" rel="noopener noreferrer" aria-label="FoodGram on X">X @FoodGram_dev</a>
-                    <a class="official-card" href="https://www.instagram.com/foodgram.mobile/" target="_blank" rel="noopener noreferrer" aria-label="FoodGram on Instagram">Instagram</a>
-                    <a class="official-card" href="https://www.tiktok.com/@foodgram_mobile" target="_blank" rel="noopener noreferrer" aria-label="FoodGram on TikTok">TikTok</a>
-                    <a class="official-card" href="https://www.threads.com/@foodgram.mobile" target="_blank" rel="noopener noreferrer" aria-label="FoodGram on Threads">Threads</a>
+                    <a class="official-card" href="https://x.com/FoodGram_dev" target="_blank" rel="noopener noreferrer"
+                        aria-label="FoodGram on X">X @FoodGram_dev</a>
+                    <a class="official-card" href="https://www.instagram.com/foodgram.mobile/" target="_blank"
+                        rel="noopener noreferrer" aria-label="FoodGram on Instagram">Instagram</a>
+                    <a class="official-card" href="https://www.tiktok.com/@foodgram_mobile" target="_blank"
+                        rel="noopener noreferrer" aria-label="FoodGram on TikTok">TikTok</a>
+                    <a class="official-card" href="https://www.threads.com/@foodgram.mobile" target="_blank"
+                        rel="noopener noreferrer" aria-label="FoodGram on Threads">Threads</a>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <div class="container">
+        <div class="container footer-inner">
             <p class="footer-text">© 2026 FoodGram. All rights reserved.</p>
+            <nav class="footer-nav" aria-label="Legal">
+                <a href="#terms">Terms of Service</a>
+                <a href="#privacy">Privacy Policy</a>
+            </nav>
         </div>
     </footer>
 
