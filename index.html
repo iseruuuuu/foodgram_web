@@ -10,15 +10,14 @@
     <meta name="keywords"
         content="FoodGram, food map app, discover restaurants, real food photos, food diary, travel food, iPhone, Android">
     <meta name="robots" content="index, follow">
-    <!-- デプロイ先に合わせてベースURLを変更してください -->
     <link rel="canonical" href="https://iseruuuuu.github.io/foodgram-web/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload"
-        href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
         as="style">
     <link
-        href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
     <link rel="icon" href="./docs/icon.png" type="image/png" sizes="any">
@@ -33,22 +32,17 @@
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_US">
     <meta property="og:image" content="https://iseruuuuu.github.io/foodgram-web/docs/icon.png">
-    <meta property="og:image:width" content="512">
-    <meta property="og:image:height" content="512">
-    <meta property="og:image:alt" content="FoodGram – Global food map app to discover real meals through photos">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@FoodGram_dev">
     <meta name="twitter:title" content="FoodGram – Discover real meals through photos">
     <meta name="twitter:description"
         content="A global food map app for exploring restaurants, travel meals, and your own food memories. Free on iPhone & Android.">
     <meta name="twitter:image" content="https://iseruuuuu.github.io/foodgram-web/docs/icon.png">
-    <meta name="twitter:image:alt" content="FoodGram – Global food map app to discover real meals through photos">
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": "MobileApplication",
             "name": "FoodGram",
-            "alternateName": "FoodGram",
             "operatingSystem": "iOS, Android",
             "applicationCategory": "SocialNetworkingApplication",
             "isAccessibleForFree": true,
@@ -59,30 +53,8 @@
                 "@type": "Organization",
                 "name": "FoodGram",
                 "url": "https://iseruuuuu.github.io/foodgram-web/",
-                "logo": "https://iseruuuuu.github.io/foodgram-web/docs/icon.png",
-                "sameAs": [
-                    "https://twitter.com/FoodGram_dev",
-                    "https://www.instagram.com/foodgram.app2025/",
-                    "https://www.threads.com/@foodgram.app2025?hl=ja",
-                    "https://www.tiktok.com/@foodgram_mobile",
-                    "https://discord.gg/M8yNDtAQ",
-                    "https://www.orynth.dev/projects/foodgram"
-                ]
+                "logo": "https://iseruuuuu.github.io/foodgram-web/docs/icon.png"
             }
-        }
-    </script>
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-                {"@type": "Question", "name": "What is FoodGram?", "acceptedAnswer": {"@type": "Answer", "text": "FoodGram is a food map app and food photo app where you discover real meals through real photos. You can explore restaurants and food spots on a map, save your food memories in a personal album, and share what you eat — including anonymously. It's available free on iPhone and Android."}},
-                {"@type": "Question", "name": "Is FoodGram free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. FoodGram is free to use. Optional Premium (US$3/month) unlocks extra features like custom profile icons, favorite categories, ad-free experience, and a hygiene map."}},
-                {"@type": "Question", "name": "Can I discover restaurants by photos?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. FoodGram is built for discovering restaurants and food spots through real food photos from real people, not only ratings. Browse by photo to find meals that look delicious to you."}},
-                {"@type": "Question", "name": "Does FoodGram work for travel planning?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Use the food map to find memorable meals around the world. Discover restaurants by photos when you're planning a trip or exploring a new city."}},
-                {"@type": "Question", "name": "Which languages are supported?", "acceptedAnswer": {"@type": "Answer", "text": "English, Japanese, Korean, Chinese, Spanish, French, German, Portuguese, Thai, Vietnamese, and more."}},
-                {"@type": "Question", "name": "How do I cancel Premium?", "acceptedAnswer": {"@type": "Answer", "text": "Manage your subscription in the App Store or Google Play subscription settings for your account."}}
-            ]
         }
     </script>
 </head>
@@ -97,11 +69,10 @@
             </a>
             <nav class="nav" id="site-nav" aria-label="Main">
                 <div class="nav-links">
-                    <a href="#why">Features</a>
                     <a href="#world-map">Map</a>
+                    <a href="#how-it-works">How it works</a>
+                    <a href="#why">Why</a>
                     <a href="#official">Community</a>
-                    <a href="#premium">Premium</a>
-                    <a href="#faq">FAQ</a>
                 </div>
                 <a href="#download" class="btn btn-nav-cta">Download</a>
             </nav>
@@ -113,7 +84,7 @@
     </header>
 
     <main>
-        <!-- Hero: brand, story, download, product visual -->
+        <!-- Hero -->
         <section class="hero" id="get-started">
             <div class="container hero-grid">
                 <div class="hero-copy">
@@ -122,8 +93,7 @@
                         Every meal has a story.
                         <span class="hero-title-accent">Don’t let yours disappear.</span>
                     </h1>
-                    <p class="hero-sub">Turn every restaurant, every trip, every favorite meal into your own food memory
-                        — on a map the world can explore.</p>
+                    <p class="hero-sub">Turn every restaurant, every trip, every favorite meal into a food memory — on a map the world can explore.</p>
                     <div class="hero-cta">
                         <div class="store-badges hero-badges" role="group" aria-label="Download the app">
                             <a href="https://apps.apple.com/gb/app/foodgram-food-photo-sharing/id6474065183"
@@ -138,397 +108,204 @@
                             </a>
                         </div>
                     </div>
-                    <p class="hero-trust">Free forever · No ads · Available on iOS &amp; Android</p>
+                    <p class="hero-trust">Free forever · No ads · iOS &amp; Android</p>
                 </div>
 
                 <div class="hero-visual" aria-hidden="true">
                     <div class="hero-glow"></div>
                     <figure class="hero-float hero-float--salmon">
-                        <img src="./docs/food/salmon-don.png" alt="" width="220" height="220" decoding="async">
+                        <img src="./docs/food/salmon-don.png" alt="" width="280" height="280" decoding="async">
                     </figure>
                     <figure class="hero-float hero-float--burger">
-                        <img src="./docs/food/burger.png" alt="" width="200" height="200" decoding="async">
+                        <img src="./docs/food/burger.png" alt="" width="240" height="240" decoding="async">
                     </figure>
                     <figure class="hero-float hero-float--tonkatsu">
-                        <img src="./docs/food/tonkatsu.png" alt="" width="190" height="190" decoding="async">
+                        <img src="./docs/food/tonkatsu.png" alt="" width="240" height="240" decoding="async">
                     </figure>
                     <div class="hero-phone">
-                        <img src="./docs/food/phone-ramen.png" alt="" width="320" height="650" decoding="async"
+                        <img src="./docs/food/phone-ramen.png" alt="" width="420" height="860" decoding="async"
                             fetchpriority="high">
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Stats + How it works -->
-        <section class="section section-how" id="how-it-works">
+        <!-- Stats -->
+        <section class="section section-stats" aria-label="FoodGram at a glance">
             <div class="container">
                 <div class="stats-bar" role="list">
                     <div class="stats-item" role="listitem">
                         <span class="stats-emoji" aria-hidden="true">🍴</span>
                         <div class="stats-text">
-                            <strong>4,304</strong>
+                            <strong><span class="js-count" data-target="4304">0</span></strong>
                             <span>Meals Shared</span>
                         </div>
                     </div>
                     <div class="stats-item" role="listitem">
                         <span class="stats-emoji" aria-hidden="true">👥</span>
                         <div class="stats-text">
-                            <strong>821</strong>
-                            <span>Users</span>
+                            <strong><span class="js-count" data-target="821">0</span></strong>
+                            <span>Food Lovers</span>
                         </div>
                     </div>
                     <div class="stats-item" role="listitem">
                         <span class="stats-emoji" aria-hidden="true">🌍</span>
                         <div class="stats-text">
-                            <strong>15</strong>
+                            <strong><span class="js-count" data-target="15">0</span></strong>
                             <span>Countries</span>
                         </div>
                     </div>
                     <div class="stats-item stats-item--accent" role="listitem">
-                        <span class="stats-emoji" aria-hidden="true">❤️‍🔥</span>
+                        <span class="stats-emoji" aria-hidden="true">✨</span>
                         <div class="stats-text">
-                            <strong>Build in Public</strong>
-                            <span>Every day</span>
+                            <strong>Free Forever</strong>
+                            <span>No ads</span>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
+        <!-- World Map — early, full impact -->
+        <section class="section section-world" id="world-map">
+            <div class="world-intro container">
+                <h2 class="section-title section-title-centered">Your food map of the world</h2>
+                <p class="section-lead section-lead-centered">Every meal you’ve loved, pinned where it happened.</p>
+            </div>
+            <div class="world-map-bleed">
+                <div class="world-map" role="img"
+                    aria-label="World map with food photos in France, India, Laos, Japan, New Zealand, USA, and Peru">
+                    <img class="world-map-img" src="./docs/food/map/world-map.png" alt="" width="1024" height="1024"
+                        decoding="async" loading="lazy">
+                    <div class="map-pin" style="--x: 13.5%; --y: 33%;" data-country="France">
+                        <img src="./docs/food/map/france.png" alt="" width="88" height="88" loading="lazy" decoding="async">
+                        <span class="map-pin-tail" aria-hidden="true"></span>
+                    </div>
+                    <div class="map-pin" style="--x: 28.5%; --y: 53%;" data-country="India">
+                        <img src="./docs/food/map/india.png" alt="" width="88" height="88" loading="lazy" decoding="async">
+                        <span class="map-pin-tail" aria-hidden="true"></span>
+                    </div>
+                    <div class="map-pin" style="--x: 37%; --y: 50.5%;" data-country="Laos">
+                        <img src="./docs/food/map/laos.png" alt="" width="88" height="88" loading="lazy" decoding="async">
+                        <span class="map-pin-tail" aria-hidden="true"></span>
+                    </div>
+                    <div class="map-pin" style="--x: 46.5%; --y: 36.5%;" data-country="Japan">
+                        <img src="./docs/food/map/japan.png" alt="" width="88" height="88" loading="lazy" decoding="async">
+                        <span class="map-pin-tail" aria-hidden="true"></span>
+                    </div>
+                    <div class="map-pin" style="--x: 53.5%; --y: 78.5%;" data-country="New Zealand">
+                        <img src="./docs/food/map/new-zealand.png" alt="" width="88" height="88" loading="lazy" decoding="async">
+                        <span class="map-pin-tail" aria-hidden="true"></span>
+                    </div>
+                    <div class="map-pin" style="--x: 83%; --y: 37%;" data-country="USA">
+                        <img src="./docs/food/map/usa.png" alt="" width="88" height="88" loading="lazy" decoding="async">
+                        <span class="map-pin-tail" aria-hidden="true"></span>
+                    </div>
+                    <div class="map-pin" style="--x: 81%; --y: 65%;" data-country="Peru">
+                        <img src="./docs/food/map/peru.png" alt="" width="88" height="88" loading="lazy" decoding="async">
+                        <span class="map-pin-tail" aria-hidden="true"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How it works -->
+        <section class="section section-how" id="how-it-works">
+            <div class="container">
                 <div class="how-header">
                     <h2 class="section-title section-title-centered">How FoodGram works</h2>
-                    <p class="section-lead section-lead-centered">3 simple steps to turn your meals into lasting
-                        memories</p>
+                    <p class="section-lead section-lead-centered">Three moments. A lifetime of food memories.</p>
                 </div>
-
                 <ol class="how-steps">
                     <li class="how-step">
                         <span class="how-step-num" aria-hidden="true">1</span>
                         <div class="how-step-media">
-                            <img src="./docs/food/how-photo.png" alt="A meal ready to photograph" width="640"
-                                height="480" loading="lazy" decoding="async">
-                            <span class="how-step-badge" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
-                                    stroke-width="1.8">
-                                    <path d="M4 8h3l2-2h6l2 2h3v11H4V8z" />
-                                    <circle cx="12" cy="13" r="3.5" />
-                                </svg>
-                            </span>
+                            <img src="./docs/food/how-photo.png" alt="A meal ready to photograph" width="640" height="480"
+                                loading="lazy" decoding="async">
+                            <span class="how-step-badge" aria-hidden="true">📷</span>
                         </div>
                         <h3 class="how-step-title">Take a photo</h3>
-                        <p class="how-step-text">Capture your favorite meal</p>
+                        <p class="how-step-text">Capture the meal in front of you</p>
                     </li>
                     <li class="how-step">
                         <span class="how-step-num" aria-hidden="true">2</span>
                         <div class="how-step-media how-step-media--ui">
-                            <img src="./docs/food/how-post.png" alt="FoodGram post screen with tags and share"
-                                width="640" height="480" loading="lazy" decoding="async">
+                            <img src="./docs/food/how-post.png" alt="FoodGram post screen" width="640" height="480"
+                                loading="lazy" decoding="async">
                         </div>
                         <h3 class="how-step-title">Post to FoodGram</h3>
-                        <p class="how-step-text">Share with a photo &amp; location</p>
+                        <p class="how-step-text">Share with a photo &amp; place</p>
                     </li>
                     <li class="how-step">
                         <span class="how-step-num" aria-hidden="true">3</span>
-                        <div class="how-step-media how-step-media--map">
-                            <img src="./docs/food/how-map.png" alt="FoodGram map with meal pins" width="640"
-                                height="480" loading="lazy" decoding="async">
+                        <div class="how-step-media how-step-media--album">
+                            <img src="./docs/introduce3.png" alt="FoodGram personal food album" width="640" height="480"
+                                loading="lazy" decoding="async">
                         </div>
-                        <h3 class="how-step-title">See it on your map</h3>
-                        <p class="how-step-text">Your food memories come to life</p>
+                        <h3 class="how-step-title">Food memories grow</h3>
+                        <p class="how-step-text">Your album becomes a story worth keeping</p>
                     </li>
                 </ol>
             </div>
         </section>
 
-        <!-- Product preview: screenshots first for immediate clarity -->
+        <!-- Screenshots: Timeline / Map / Album -->
         <section class="section section-preview" id="preview">
             <div class="container">
-                <h2 class="section-title">See FoodGram in action</h2>
-                <p class="section-lead">Real photos. A crowd-sourced food map. Your personal food album.</p>
-                <div class="preview-grid">
+                <div class="preview-header">
+                    <h2 class="section-title section-title-centered">See it in your hands</h2>
+                    <p class="section-lead section-lead-centered">Timeline. Map. Album. That’s the whole experience.</p>
+                </div>
+                <div class="preview-grid preview-grid--trio">
                     <figure class="preview-card">
                         <div class="preview-card-inner">
-                            <img src="./docs/introduce.png" alt="FoodGram timeline with real meal photos"
-                                loading="lazy">
+                            <img src="./docs/introduce.png" alt="FoodGram timeline" loading="lazy" width="640" height="1200">
                         </div>
-                        <figcaption class="preview-caption">Share the meals you actually ate</figcaption>
+                        <figcaption class="preview-caption">Timeline</figcaption>
                     </figure>
                     <figure class="preview-card">
                         <div class="preview-card-inner">
-                            <img src="./docs/introduce2.png" alt="FoodGram map with meal pins" loading="lazy">
+                            <img src="./docs/introduce2.png" alt="FoodGram world map" loading="lazy" width="640" height="1200">
                         </div>
-                        <figcaption class="preview-caption">Every meal becomes a pin on the world map</figcaption>
+                        <figcaption class="preview-caption">World Map</figcaption>
                     </figure>
                     <figure class="preview-card">
                         <div class="preview-card-inner">
-                            <img src="./docs/introduce3.png" alt="FoodGram personal food album" loading="lazy">
+                            <img src="./docs/introduce3.png" alt="FoodGram album" loading="lazy" width="640" height="1200">
                         </div>
-                        <figcaption class="preview-caption">Turn your meals into a personal food album</figcaption>
-                    </figure>
-                    <figure class="preview-card">
-                        <div class="preview-card-inner">
-                            <img src="./docs/introduce4.png" alt="FoodGram post with location" loading="lazy">
-                        </div>
-                        <figcaption class="preview-caption">Find your next meal through photos</figcaption>
-                    </figure>
-                    <figure class="preview-card">
-                        <div class="preview-card-inner">
-                            <img src="./docs/introduce5.png" alt="FoodGram premium and map" loading="lazy">
-                        </div>
-                        <figcaption class="preview-caption">Share casually, even anonymously</figcaption>
+                        <figcaption class="preview-caption">Album</figcaption>
                     </figure>
                 </div>
             </div>
         </section>
 
-        <!-- Main value propositions: 3 pillars + 2 secondary -->
-        <section class="section section-features" id="features">
-            <div class="container">
-                <h2 class="section-title">What you can do</h2>
-                <p class="section-lead">Discover restaurants through real food photos. Each meal becomes part of a
-                    global map.</p>
-                <div class="value-grid">
-                    <article class="value-card">
-                        <h3 class="value-card-title">Find food by photos</h3>
-                        <p class="value-card-text">See real dishes from people who actually ate there, not just star
-                            ratings.</p>
-                    </article>
-                    <article class="value-card">
-                        <h3 class="value-card-title">Explore a crowd-sourced food map</h3>
-                        <p class="value-card-text">Every post becomes a pin on the map — from everyday lunches to
-                            travel meals.</p>
-                    </article>
-                    <article class="value-card">
-                        <h3 class="value-card-title">Build a personal food album</h3>
-                        <p class="value-card-text">Turn your meals into a visual food diary you can always come back
-                            to.</p>
-                    </article>
-                    <article class="value-card value-card-secondary">
-                        <h3 class="value-card-title">Share casually</h3>
-                        <p class="value-card-text">Post with or without your name. No pressure — just share what you
-                            ate.</p>
-                    </article>
-                </div>
-                <div class="features-cta-block">
-                    <p class="features-cta-label">Start exploring food near you</p>
-                    <div class="store-badges store-badges-compact">
-                        <a href="https://apps.apple.com/gb/app/foodgram-food-photo-sharing/id6474065183" target="_blank"
-                            rel="noopener" aria-label="Download on the App Store">
-                            <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83"
-                                alt="Download on the App Store">
-                        </a>
-                        <a href="https://play.google.com/store/apps/details?id=com.food_gram_app.com.com.com"
-                            target="_blank" rel="noopener" aria-label="Get it on Google Play">
-                            <img src="https://play.google.com/intl/en/badges/static/images/badges/en_badge_web_generic.png"
-                                alt="Get it on Google Play">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Why FoodGram is different: bold, premium, memorable -->
-        <section class="section section-different" id="different">
-            <div class="container">
-                <h2 class="section-title section-title-centered">Why FoodGram is different</h2>
-                <div class="different-block">
-                    <div class="different-row">
-                        <p class="different-not">Not ratings.</p>
-                        <p class="different-yes">Real meals.</p>
-                    </div>
-                    <div class="different-row">
-                        <p class="different-not">Not restaurant databases.</p>
-                        <p class="different-yes">A food map built by people.</p>
-                    </div>
-                    <div class="different-row">
-                        <p class="different-not">Not just posting.</p>
-                        <p class="different-yes">A personal food memory album.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Who it's for: 3 audiences -->
-        <section class="section section-audience" id="audience">
-            <div class="container">
-                <h2 class="section-title">Who FoodGram is for</h2>
-                <p class="section-lead">Whether you travel, eat local, or just love remembering meals.</p>
-                <div class="audience-grid">
-                    <article class="audience-card">
-                        <h3 class="audience-card-title">Travelers</h3>
-                        <p class="audience-card-text">Find memorable meals around the world. Discover restaurants by
-                            photos when you plan a trip or explore a new city.</p>
-                    </article>
-                    <article class="audience-card">
-                        <h3 class="audience-card-title">Local food lovers</h3>
-                        <p class="audience-card-text">Discover nearby lunch spots and hidden gems. Real photos, not just
-                            ratings.</p>
-                    </article>
-                    <article class="audience-card">
-                        <h3 class="audience-card-title">Food memory keepers</h3>
-                        <p class="audience-card-text">Turn your meals into a personal food album and map. Your visual
-                            food diary in one place.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Premium: support / upgrade, not pushy -->
-        <section class="section section-premium" id="premium">
-            <div class="container">
-                <h2 class="section-title">FoodGram Premium</h2>
-                <p class="section-lead">Support the FoodGram community and unlock a few extra ways to explore food. The
-                    app is fully usable for free.</p>
-                <div class="premium-comparison">
-                    <div class="premium-plan premium-plan-free">
-                        <h3 class="premium-plan-name">Free</h3>
-                        <ul class="premium-plan-list">
-                            <li>Browse food posts</li>
-                            <li>Discover places on the map</li>
-                            <li>Save your food memories</li>
-                            <li>Post casually, including anonymously</li>
-                        </ul>
-                    </div>
-                    <div class="premium-plan premium-plan-pro">
-                        <span class="premium-badge">Support FoodGram</span>
-                        <h3 class="premium-plan-name">FoodGram Premium</h3>
-                        <p class="premium-plan-price">US$3/month</p>
-                        <ul class="premium-plan-list">
-                            <li>Custom profile icon</li>
-                            <li>Favorite categories</li>
-                            <li>Earn titles as you post</li>
-                            <li>Ad-free experience</li>
-                            <li>Hygiene map for restaurants</li>
-                        </ul>
-                        <a class="btn btn-primary premium-cta"
-                            href="https://apps.apple.com/gb/app/foodgram-food-photo-sharing/id6474065183"
-                            target="_blank" rel="noopener">Get Premium in the app</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ: readable, clean -->
-        <section class="section section-faq" id="faq">
-            <div class="container container-narrow">
-                <h2 class="section-title">FAQ</h2>
-                <div class="faq-list">
-                    <details class="faq-item">
-                        <summary class="faq-question">What is FoodGram?</summary>
-                        <p class="faq-answer">FoodGram is a food map app where you discover real meals through real
-                            photos. Explore restaurants and food spots on a map, save your food memories in a personal
-                            album, and share what you eat — including anonymously. Free on iPhone and Android.</p>
-                    </details>
-                    <details class="faq-item">
-                        <summary class="faq-question">Is FoodGram free?</summary>
-                        <p class="faq-answer">Yes. The app is free to use. Optional Premium (US$3/month) adds custom
-                            icons, favorite categories, ad-free experience, and a hygiene map.</p>
-                    </details>
-                    <details class="faq-item">
-                        <summary class="faq-question">Can I discover restaurants by photos?</summary>
-                        <p class="faq-answer">Yes. FoodGram is built for discovering restaurants through real food
-                            photos from real people, not only ratings.</p>
-                    </details>
-                    <details class="faq-item">
-                        <summary class="faq-question">Does FoodGram work for travel?</summary>
-                        <p class="faq-answer">Yes. Use the food map to find memorable meals around the world and plan
-                            trips by real photos.</p>
-                    </details>
-                    <details class="faq-item">
-                        <summary class="faq-question">Which languages are supported?</summary>
-                        <p class="faq-answer">English, Japanese, Korean, Chinese, Spanish, French, German, Portuguese,
-                            Thai, Vietnamese, and more.</p>
-                    </details>
-                    <details class="faq-item">
-                        <summary class="faq-question">How do I cancel Premium?</summary>
-                        <p class="faq-answer">Manage your subscription in the App Store or Google Play subscription
-                            settings for your account.</p>
-                    </details>
-                </div>
-            </div>
-        </section>
-
-        <!-- World map: food photo pins -->
-        <section class="section section-world" id="world-map">
-            <div class="container world-inner">
-                <div class="world-copy">
-                    <h2 class="section-title">Your food map of the world</h2>
-                    <p class="section-lead">Every meal you’ve ever loved, all in one place.</p>
-                    <a class="btn btn-primary world-cta" href="#download">Explore the map →</a>
-                </div>
-                <div class="world-map-stage">
-                    <div class="world-map" role="img"
-                        aria-label="World map with food photos in France, India, Laos, Japan, New Zealand, USA, and Peru">
-                        <img class="world-map-img" src="./docs/food/map/world-map.png" alt="" width="1024" height="1024"
-                            decoding="async" loading="lazy">
-
-                        <!-- Pacific-centered map pin positions (tip of triangle = land point) -->
-                        <div class="map-pin" style="--x: 13.5%; --y: 33%;" data-country="France">
-                            <img src="./docs/food/map/france.png" alt="" width="72" height="72" loading="lazy"
-                                decoding="async">
-                            <span class="map-pin-tail" aria-hidden="true"></span>
-                        </div>
-                        <div class="map-pin" style="--x: 28.5%; --y: 53%;" data-country="India">
-                            <img src="./docs/food/map/india.png" alt="" width="72" height="72" loading="lazy"
-                                decoding="async">
-                            <span class="map-pin-tail" aria-hidden="true"></span>
-                        </div>
-                        <div class="map-pin" style="--x: 37%; --y: 50.5%;" data-country="Laos">
-                            <img src="./docs/food/map/laos.png" alt="" width="72" height="72" loading="lazy"
-                                decoding="async">
-                            <span class="map-pin-tail" aria-hidden="true"></span>
-                        </div>
-                        <div class="map-pin" style="--x: 46.5%; --y: 36.5%;" data-country="Japan">
-                            <img src="./docs/food/map/japan.png" alt="" width="72" height="72" loading="lazy"
-                                decoding="async">
-                            <span class="map-pin-tail" aria-hidden="true"></span>
-                        </div>
-                        <div class="map-pin" style="--x: 53.5%; --y: 78.5%;" data-country="New Zealand">
-                            <img src="./docs/food/map/new-zealand.png" alt="" width="72" height="72" loading="lazy"
-                                decoding="async">
-                            <span class="map-pin-tail" aria-hidden="true"></span>
-                        </div>
-                        <div class="map-pin" style="--x: 83%; --y: 37%;" data-country="USA">
-                            <img src="./docs/food/map/usa.png" alt="" width="72" height="72" loading="lazy"
-                                decoding="async">
-                            <span class="map-pin-tail" aria-hidden="true"></span>
-                        </div>
-                        <div class="map-pin" style="--x: 81%; --y: 65%;" data-country="Peru">
-                            <img src="./docs/food/map/peru.png" alt="" width="72" height="72" loading="lazy"
-                                decoding="async">
-                            <span class="map-pin-tail" aria-hidden="true"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Why FoodGram: 4 pillars -->
+        <!-- Why FoodGram -->
         <section class="section section-why" id="why">
             <div class="container">
                 <div class="why-header">
                     <h2 class="section-title section-title-centered">Why FoodGram?</h2>
-                    <p class="section-lead section-lead-centered">Everything you need to remember meals — and find the next one.</p>
+                    <p class="section-lead section-lead-centered">Less scrolling through chaos. More remembering what mattered.</p>
                 </div>
-                <div class="why-grid">
-                    <article class="why-card">
+                <div class="why-flow">
+                    <article class="why-card why-card--hero">
                         <span class="why-icon" aria-hidden="true">📍</span>
                         <h3 class="why-card-title">Personal food map</h3>
-                        <p class="why-card-text">Every meal you post becomes a pin. See where you’ve eaten at a glance.</p>
+                        <p class="why-card-text">Every post becomes a pin. See your life in meals — city by city, bite by bite.</p>
                     </article>
                     <article class="why-card">
                         <span class="why-icon" aria-hidden="true">📷</span>
                         <h3 class="why-card-title">Food timeline</h3>
-                        <p class="why-card-text">Scroll real meal photos in order — a visual diary of what you actually ate.</p>
+                        <p class="why-card-text">A visual diary of what you actually ate — not what you meant to post.</p>
                     </article>
                     <article class="why-card">
                         <span class="why-icon" aria-hidden="true">📖</span>
                         <h3 class="why-card-title">Travel albums</h3>
-                        <p class="why-card-text">Keep trip meals together. Look back on that city through food, not folders.</p>
+                        <p class="why-card-text">Keep trip meals together. Relive a city through food, not camera-roll chaos.</p>
                     </article>
-                    <article class="why-card">
+                    <article class="why-card why-card--wide">
                         <span class="why-icon" aria-hidden="true">❤️</span>
-                        <h3 class="why-card-title">Discover new food</h3>
-                        <p class="why-card-text">Browse what people nearby are eating — choose by appetite, not star ratings.</p>
+                        <h3 class="why-card-title">Discover by appetite</h3>
+                        <p class="why-card-text">Browse what people nearby are eating. Choose with your eyes — not star ratings.</p>
                     </article>
                 </div>
             </div>
@@ -546,9 +323,9 @@
                             Camera Roll
                         </h3>
                         <ul class="compare-list">
-                            <li><span aria-hidden="true">📁</span> 10,000+ photos</li>
+                            <li><span aria-hidden="true">📁</span> 10,000 photos</li>
                             <li><span aria-hidden="true">🔍</span> Hard to find</li>
-                            <li><span aria-hidden="true">💨</span> Soon forgotten</li>
+                            <li><span aria-hidden="true">💨</span> Forgotten</li>
                         </ul>
                     </article>
 
@@ -559,26 +336,33 @@
                             FoodGram
                         </h3>
                         <ul class="compare-list compare-list--after">
-                            <li><span class="compare-check" aria-hidden="true">✓</span> All meals in one place</li>
-                            <li><span class="compare-check" aria-hidden="true">✓</span> See on a world map</li>
-                            <li><span class="compare-check" aria-hidden="true">✓</span> Your food diary for life</li>
+                            <li><span class="compare-check" aria-hidden="true">✓</span> World map</li>
+                            <li><span class="compare-check" aria-hidden="true">✓</span> Timeline</li>
+                            <li><span class="compare-check" aria-hidden="true">✓</span> Albums</li>
+                            <li><span class="compare-check" aria-hidden="true">✓</span> Food memories forever</li>
                         </ul>
                     </article>
 
                     <div class="compare-visual">
-                        <img src="./docs/food/ramen-memory.png" alt="A bowl of ramen" width="640" height="640"
-                            loading="lazy" decoding="async" class="compare-ramen">
+                        <div class="compare-stack" aria-hidden="true">
+                            <img src="./docs/food/salmon-don.png" alt="" class="compare-stack-img compare-stack-img--a">
+                            <img src="./docs/food/ramen-memory.png" alt="" class="compare-stack-img compare-stack-img--b">
+                            <img src="./docs/food/tonkatsu.png" alt="" class="compare-stack-img compare-stack-img--c">
+                        </div>
                         <p class="compare-script">Make your food<br>memories last <span aria-hidden="true">♡</span></p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Final CTA: strong, clear -->
+        <!-- CTA -->
         <section class="section section-download" id="download">
             <div class="container">
                 <div class="download-banner">
-                    <h2 class="download-banner-title">Ready to build your food memory?</h2>
+                    <div class="download-banner-copy">
+                        <h2 class="download-banner-title">Start building your food memories today.</h2>
+                        <p class="download-banner-sub">Join hundreds of food lovers around the world.</p>
+                    </div>
                     <div class="download-banner-actions">
                         <div class="store-badges hero-badges" role="group" aria-label="Download the app">
                             <a href="https://apps.apple.com/gb/app/foodgram-food-photo-sharing/id6474065183"
@@ -598,19 +382,17 @@
             </div>
         </section>
 
-        <!-- Official accounts: deprioritized but clean -->
         <section class="section section-official" id="official">
             <div class="container">
-                <h2 class="section-title section-title-muted">Community & support</h2>
+                <h2 class="section-title section-title-muted">Community</h2>
                 <div class="official-grid">
-                    <a class="official-card" href="https://x.com/FoodGram_dev" target="_blank" rel="noopener noreferrer"
-                        aria-label="FoodGram on X">X @FoodGram_dev</a>
+                    <a class="official-card" href="https://x.com/FoodGram_dev" target="_blank" rel="noopener noreferrer">X</a>
                     <a class="official-card" href="https://www.instagram.com/foodgram.mobile/" target="_blank"
-                        rel="noopener noreferrer" aria-label="FoodGram on Instagram">Instagram</a>
+                        rel="noopener noreferrer">Instagram</a>
                     <a class="official-card" href="https://www.tiktok.com/@foodgram_mobile" target="_blank"
-                        rel="noopener noreferrer" aria-label="FoodGram on TikTok">TikTok</a>
+                        rel="noopener noreferrer">TikTok</a>
                     <a class="official-card" href="https://www.threads.com/@foodgram.mobile" target="_blank"
-                        rel="noopener noreferrer" aria-label="FoodGram on Threads">Threads</a>
+                        rel="noopener noreferrer">Threads</a>
                 </div>
             </div>
         </section>
@@ -626,11 +408,11 @@
                 <p class="footer-tagline">Discover. Remember. Share.</p>
             </div>
             <nav class="footer-nav" aria-label="Footer">
-                <a href="#why">Features</a>
                 <a href="#world-map">Map</a>
+                <a href="#how-it-works">How</a>
+                <a href="#why">Why</a>
                 <a href="#official">Community</a>
-                <a href="#premium">Premium</a>
-                <a href="#faq">FAQ</a>
+                <a href="#download">Download</a>
             </nav>
             <div class="footer-social" aria-label="Social links">
                 <a href="https://www.instagram.com/foodgram.mobile/" target="_blank" rel="noopener noreferrer"
@@ -648,28 +430,61 @@
         (function () {
             var toggle = document.querySelector('.nav-toggle');
             var nav = document.querySelector('.nav');
-            if (!toggle || !nav) return;
-
-            function setOpen(open) {
-                toggle.setAttribute('aria-expanded', String(open));
-                toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-                nav.classList.toggle('open', open);
-                document.body.classList.toggle('nav-open', open);
+            if (toggle && nav) {
+                function setOpen(open) {
+                    toggle.setAttribute('aria-expanded', String(open));
+                    toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+                    nav.classList.toggle('open', open);
+                    document.body.classList.toggle('nav-open', open);
+                }
+                toggle.addEventListener('click', function () {
+                    setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+                });
+                nav.querySelectorAll('a').forEach(function (link) {
+                    link.addEventListener('click', function () { setOpen(false); });
+                });
+                document.addEventListener('keydown', function (e) {
+                    if (e.key === 'Escape') setOpen(false);
+                });
             }
 
-            toggle.addEventListener('click', function () {
-                setOpen(toggle.getAttribute('aria-expanded') !== 'true');
-            });
+            var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-            nav.querySelectorAll('a').forEach(function (link) {
-                link.addEventListener('click', function () {
-                    setOpen(false);
-                });
-            });
+            function animateCount(el) {
+                var target = parseInt(el.getAttribute('data-target'), 10) || 0;
+                if (reduce) {
+                    el.textContent = target.toLocaleString('en-US');
+                    return;
+                }
+                var start = 0;
+                var duration = 1200;
+                var t0 = null;
+                function frame(ts) {
+                    if (!t0) t0 = ts;
+                    var p = Math.min(1, (ts - t0) / duration);
+                    var eased = 1 - Math.pow(1 - p, 3);
+                    el.textContent = Math.round(start + (target - start) * eased).toLocaleString('en-US');
+                    if (p < 1) requestAnimationFrame(frame);
+                }
+                requestAnimationFrame(frame);
+            }
 
-            document.addEventListener('keydown', function (e) {
-                if (e.key === 'Escape') setOpen(false);
-            });
+            var stats = document.querySelector('.section-stats');
+            if (stats && 'IntersectionObserver' in window) {
+                var once = false;
+                var io = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting && !once) {
+                            once = true;
+                            document.querySelectorAll('.js-count').forEach(animateCount);
+                            io.disconnect();
+                        }
+                    });
+                }, { threshold: 0.35 });
+                io.observe(stats);
+            } else {
+                document.querySelectorAll('.js-count').forEach(animateCount);
+            }
         })();
     </script>
 </body>
