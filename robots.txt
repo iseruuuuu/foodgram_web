@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://iseruuuuu.github.io/foodgram_web/sitemap.xml
